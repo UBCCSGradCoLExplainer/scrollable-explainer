@@ -1,0 +1,187 @@
+/* Reset styling */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+#extra-space {
+  z-index: 100;
+}
+
+/* Set body font */
+* {
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Off-white background colour */
+body {
+  background-color: #faf9f6;
+}
+
+/* Set header font */
+h1 {
+  font-family: Lora, serif;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  font-family: Lora, serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #002145; /* UBC Primary Colour */
+}
+
+.container {
+  width: 960px; /* Push content to centre */
+  /* border: 3px solid red; */
+}
+
+#hhic {
+  padding-top: 60px;
+}
+
+.sections {
+  position: relative;
+  display: inline-block;
+  /* width: 256px; */
+  top: 0px;
+  z-index: 90;
+  padding-bottom: 200px;
+}
+
+section {
+  width: 256px;
+}
+
+section:last-of-type {
+  /* credit: https://stackoverflow.com/questions/950829/div-height0px-does-not-work */
+  display: block;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.section-span {
+  width: 100%;
+}
+
+.step {
+  margin-bottom: 200px;
+  font-family: "TiemposTextWeb-Regular", "Georgia";
+  font-size: 16px;
+  line-height: 23px;
+  color: #767678;
+}
+
+#sections .title {
+  /* font-size: 16px; */
+  /* font-weight: bold; */
+  /* margin-bottom: 2px; */
+  /* color: #262626; */
+  /* line-height: 1.2em; */
+}
+
+#extra-space {
+  margin-bottom: 50rem;
+}
+
+#vis {
+  display: inline-block;
+  position: fixed;
+  top: 60px;
+  z-index: 1;
+  margin-left: 0;
+  /* height: 660px; */
+  /* width: 510px; */
+  /* background-color: #ddd; */
+}
+
+#vis svg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#vis #observable-embed-lollipop {
+  z-index: 2;
+  position: relative;
+  /* top: 0;
+  left: 0; */
+  /* min-height: 100%;
+  min-width: 100%;
+  margin-left: 50px; */
+  /* margin-left: 128px; */
+  opacity: 0;
+  /* display: none; */
+}
+
+#vis .lollipop-interactions {
+  margin-left: 64px;
+  width: 640px;
+}
+
+/* #vis #observable-embed-lollipop div:first-of-type{
+  margin-top: 
+} */
+#vis #observable-embed-lollipop div {
+  /* margin-bottom: 50px; */
+  position: relative;
+  /* width: 30%; */
+}
+
+#vis .mainTitle {
+  font-size: 64px;
+  text-anchor: middle;
+}
+
+#vis .quote {
+  font-size: 1.2rem;
+  text-anchor: middle;
+}
+
+#vis .sub-title {
+  font-size: 80px;
+  text-anchor: middle;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #666;
+  shape-rendering: crispEdges;
+}
+
+.highlight {
+  fill: #008080;
+  font-weight: bold;
+}
+
+.cough-arrow {
+  stroke: #000;
+  stroke-width: 4px;
+}
+
+#scatterSelectButton {
+  top: 1%;
+  left: 100%;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  z-index: 2;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .treemap_legend {
+  z-index: 100;
+} */
+
+.treemap-total {
+  font-size: 2rem;
+}
