@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
   </head>
-
+  <!--  -->
   <body>
     <div id="focus-space" class="container">
       <h1>CPSC547 2022WT1: UBC CS Grads Cost of Living</h1>
@@ -140,7 +140,7 @@
           <h2 class="title">Oh no!</h2>
           <p>
             From our survey, the funding of
-            <span style="color: #db0b0b; font-weight: bold">47.5%</span>
+            <span style="color: #db0b0b; font-weight: bold;">47.5%</span>
             graduate students in UBC CS department cannot offset their basic
             expenses! Each student highlighted in red has more expenses than
             they do income.
@@ -153,20 +153,20 @@
             <p>
               Some students receieve additional financial support in terms of
               awards or internships. All students that
-              <span style="color: #7e7dfe">receive this extra support</span>
+              <span style="color: #7e7dfe;">receive this extra support</span>
               can afford all their basic expenses and perhaps even save a little
               on the side.
             </p>
             <p>
               However, there are students are
-              <span style="color: #ffa38b"
+              <span style="color: #ffa38b;"
                 >who still cannot overcome their expenses</span
               >
               because they currently have no extra support available.
             </p>
             <p>
               There are also those with
-              <span style="color: #8fbd88">"just enough"</span> funding, but
+              <span style="color: #8fbd88;">"just enough"</span> funding, but
               they likely are unable to save as they just meet their basic
               needs.
             </p>
@@ -307,25 +307,25 @@
     <script type="module">
       import {
         Runtime,
-        Inspector,
-      } from 'https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js';
-      import define from 'https://api.observablehq.com/d/99c0287acd01a0e6@842.js?v=3';
+        Inspector
+      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/99c0287acd01a0e6@842.js?v=3";
       new Runtime().module(define, (name) => {
-        if (name === 'viewof food_health')
+        if (name === "viewof food_health")
           return new Inspector(
-            document.querySelector('#observablehq-viewof-food_health-007ee4e9')
+            document.querySelector("#observablehq-viewof-food_health-007ee4e9")
           );
-        if (name === 'viewof utilities_commute')
+        if (name === "viewof utilities_commute")
           return new Inspector(
             document.querySelector(
-              '#observablehq-viewof-utilities_commute-007ee4e9'
+              "#observablehq-viewof-utilities_commute-007ee4e9"
             )
           );
-        if (name === 'lollipopdm')
+        if (name === "lollipopdm")
           return new Inspector(
-            document.querySelector('#observablehq-lollipopdm-007ee4e9')
+            document.querySelector("#observablehq-lollipopdm-007ee4e9")
           );
-        return ['data_avg', 'xScale', 'yScale', 'xAxis'].includes(name);
+        return ["data_avg", "xScale", "yScale", "xAxis"].includes(name);
       });
     </script>
   </body>
