@@ -284,7 +284,7 @@ var scrollVis = function () {
     g.append("polygon")
       .attr("class", "title prompt")
       .attr("points", "0 0, 30 45, 60 0")
-      .attr("stroke", "orangered") // Schema colour
+      // .attr("stroke", "orangered") // Schema colour
       .attr("fill", "002145") // UBC Primary colour
       .attr("transform", `translate(${xprompt}, ${height - 100})`) //is there a way to center this? - Dev
       .attr("opacity", 0);
@@ -935,6 +935,14 @@ var scrollVis = function () {
 
     // selectList
     d3.select("#vis").append("select").attr("id", "scatterSelectButton");
+    // scatterSelectButton
+    //   .style("top", "1%")
+    //   .style("left", "100%")
+    //   .style("width", "100px")
+    //   .style("height", "30px")
+    //   .style("position", "relative")
+    //   .style("z-index", 2);
+
     // add the options to the button
     var buttonOptions = [...program_lst];
     buttonOptions.push("All");
@@ -958,7 +966,8 @@ var scrollVis = function () {
         }
       });
 
-    d3.select("#scatterSelectButton").attr("hidden", "hidden");
+    d3.select("#scatterSelectButton").style("display", "none");
+    // .attr("hidden", "hidden");
   };
 
   /**
@@ -1652,10 +1661,20 @@ var scrollVis = function () {
       .transition("hideColorLegend")
       .duration(fadeOutDuration)
       .attr("opacity", 0);
+
     d3.select("#scatterSelectButton")
+      // .transition()
+      // .duration(0)
+      // .style("top", "1%")
+      // .style("left", "100%")
+      // .style("width", "100px")
+      // .style("height", "30px")
+      // .style("position", "absolute")
+      // .style("z-index", 8)
       .transition()
       .duration(fadeOutDuration)
-      .attr("hidden", "hidden");
+      .style("display", "none");
+    // .attr("hidden", "hidden");
 
     // show now
     g.selectAll(".scatterCaption")
@@ -1759,9 +1778,18 @@ var scrollVis = function () {
 
     // to-do: add a filter and change the content
     d3.select("#scatterSelectButton")
+      // .transition()
+      // .duration(0)
+      // .style("top", "1%")
+      // .style("left", "100%")
+      // .style("width", "100px")
+      // .style("height", "30px")
+      // .style("position", "absolute")
+      // .style("z-index", 8)
       .transition()
       .duration(fadeOutDuration)
-      .attr("hidden", null);
+      .style("display", "block");
+    // .attr("hidden", null);
 
     d3.selectAll(".scatterOptions").attr("selected", function (d) {
       if (d === "All") {
@@ -1812,7 +1840,7 @@ var scrollVis = function () {
         }
         case "MSc": {
           d3.select(".scatter-final-content").html(
-            "<p>Here we see the income vs. expenses for only computer science M.Sc. students. Unfilled shapes represent just the basic income (RA-ship + TA-ship) vs. basic expenses. Filled in shapes represent supported income (RA-ship + TA-ship + other awards or internships) for that student. Shapes that are connected by a dotted line represent 1 student. </p>"
+            "<p>Here we see the income vs. expenses for only computer science M.Sc. students. Unfilled shapes represent just the basic income (RA-ship + TA-ship + Awards) vs. basic expenses. Filled in shapes represent supported income (RA-ship + TA-ship + other awards or internships) for that student. Shapes that are connected by a dotted line represent 1 student. </p>"
           );
           break;
         }
@@ -1849,9 +1877,18 @@ var scrollVis = function () {
     d3.select(".scatter-final-content").html(originalTextConent);
 
     d3.select("#scatterSelectButton")
+      // .transition()
+      // .duration(0)
+      // .style("top", "1%")
+      // .style("left", "100%")
+      // .style("width", "100px")
+      // .style("height", "30px")
+      // .style("position", "absolute")
+      // .style("z-index", 8)
       .transition()
       .duration(fadeOutDuration)
-      .attr("hidden", "hidden");
+      .style("display", "none");
+
     hideAxis("bottomAxis", "leftAxis");
     g.selectAll(".connectLine")
       .transition()
