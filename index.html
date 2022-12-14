@@ -240,10 +240,10 @@
       <div id="vis">
         <div id="observable-embed-lollipop">
           <div class="lollipop-interactions">
-            <div id="observablehq-viewof-food_health-007ee4e9"></div>
-            <div id="observablehq-viewof-utilities_commute-007ee4e9"></div>
+            <div id="observablehq-viewof-food_health-d77a1324"></div>
+            <div id="observablehq-viewof-utilities_commute-d77a1324"></div>
           </div>
-          <div id="observablehq-lollipopdm-007ee4e9"></div>
+          <div id="observablehq-lollipopdm-d77a1324"></div>
 
           <!-- Inspector css & Long script old placement for reference -->
         </div>
@@ -309,21 +309,21 @@
         Runtime,
         Inspector
       } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-      import define from "https://api.observablehq.com/d/99c0287acd01a0e6@842.js?v=3";
+      import define from "https://api.observablehq.com/d/99c0287acd01a0e6@846.js?v=3";
       new Runtime().module(define, (name) => {
         if (name === "viewof food_health")
           return new Inspector(
-            document.querySelector("#observablehq-viewof-food_health-007ee4e9")
+            document.querySelector("#observablehq-viewof-food_health-d77a1324")
           );
         if (name === "viewof utilities_commute")
           return new Inspector(
             document.querySelector(
-              "#observablehq-viewof-utilities_commute-007ee4e9"
+              "#observablehq-viewof-utilities_commute-d77a1324"
             )
           );
         if (name === "lollipopdm")
           return new Inspector(
-            document.querySelector("#observablehq-lollipopdm-007ee4e9")
+            document.querySelector("#observablehq-lollipopdm-d77a1324")
           );
         return ["data_avg", "xScale", "yScale", "xAxis"].includes(name);
       });
