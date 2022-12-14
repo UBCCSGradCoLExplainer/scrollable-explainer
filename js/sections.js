@@ -1834,13 +1834,13 @@ var scrollVis = function () {
       switch (selectedGroup) {
         case "PhD": {
           d3.select(".scatter-final-content").html(
-            "<p>Here we see the income vs. expenses for only computer science Ph.D. students. Unfilled shapes represent just the basic income (RA-ship + TA-ship) vs. basic expenses. Filled in shapes represent supported income (RA-ship + TA-ship + other awards or internships) for that student. Shapes that are connected by a dotted line represent 1 student.</p>"
-          ); //cannot have transition (not in svg)
+            `<p>Here we see the income vs. expenses for only computer science Ph.D. students. Unfilled shapes represent just the basic income (RA-ship + TA-ship) vs. basic expenses. Filled in shapes represent supported income (RA-ship + TA-ship + other awards or internships) for that student. Shapes that are connected by a dotted line represent 1 student. </p> <p>It appears that most Ph.D. students receive additional funding that can can offset their expenses but there are still many who cannot. </p>`
+          );
           break;
         }
         case "MSc": {
           d3.select(".scatter-final-content").html(
-            "<p>Here we see the income vs. expenses for only computer science M.Sc. students. Unfilled shapes represent just the basic income (RA-ship + TA-ship + Awards) vs. basic expenses. Filled in shapes represent supported income (RA-ship + TA-ship + other awards or internships) for that student. Shapes that are connected by a dotted line represent 1 student. </p>"
+            "<p>Here we see the income vs. expenses for only computer science M.Sc. students. Unfilled shapes represent just the basic income (RA-ship + TA-ship + Awards) vs. basic expenses. Filled in shapes represent supported income (RA-ship + TA-ship + other awards or internships) for that student. Shapes that are connected by a dotted line represent 1 student. <p> Compared to Ph.D. students not many M.Sc. students receive enough additional funding to cover their expenses. </p>"
           );
           break;
         }
