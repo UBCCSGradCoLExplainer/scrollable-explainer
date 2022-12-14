@@ -284,8 +284,8 @@ var scrollVis = function () {
     g.append("polygon")
       .attr("class", "title prompt")
       .attr("points", "0 0, 30 45, 60 0")
-      .attr("stroke", "grey")
-      .attr("fill", "grey")
+      .attr("stroke", "orangered") // Schema colour
+      .attr("fill", "002145") // UBC Primary colour
       .attr("transform", `translate(${xprompt}, ${height - 100})`) //is there a way to center this? - Dev
       .attr("opacity", 0);
   }
