@@ -372,7 +372,7 @@ var scrollVis = function () {
       .enter()
       .append("text")
       .attr("class", "treeText treemap-total")
-      .text(`Total Basic Expenses: $2351.40`);
+      .text(`Total Monthly Basic Expenses: $2351.40`);
 
     // var tooltip = d3
     //   .select("#vis")
