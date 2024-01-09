@@ -19,7 +19,7 @@ This project is a fork of [vlandham's scroll_demo](https://github.com/vlandham/s
 ### How to run
 You can access [the page directly here](https://csb-3gzrqn-pnl2vqbwy-tommyvn-ubcca.vercel.app/).
 
-The cost of living data can be found here: https://docs.google.com/spreadsheets/d/1_CkDCwjZO9Bbg0TVTyuggbz1INQOuQA2k-ygF1A32K0/edit#gid=32073719
+~~The cost of living data can be found here:~~ This data was removed for privacy reason.
 
 The university comparison data can be found here: https://docs.google.com/spreadsheets/d/1h6S92_bJ8YvDWPR_CEmTqrh5J6gwK_O_a7PZlIOYd5U/edit#gid=1501320853
 
